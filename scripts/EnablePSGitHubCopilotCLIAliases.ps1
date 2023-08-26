@@ -14,5 +14,4 @@ $existingProfileContent = Get-Content -Path $profilePath -Raw
 
 if (-not $existingProfileContent.Contains("Import-Module -Name PSGitHubCopilotCLI")) {
     Add-Content -Path $profilePath -Value $profileContent
-}
- 
+
